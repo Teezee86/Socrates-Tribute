@@ -1,0 +1,31 @@
+{
+    "recommendations": [
+        "anbuselvanrocky.bootstrap5-vscode",
+        "hansuxdev.bootstrap5-snippets",
+        "arcsine.chronicler",
+        "naumovs.color-highlight",
+        "tock.vscode-css-custom-properties",
+        "dzhavat.css-flexbox-cheatsheet",
+        "ohansemmanuel.css-grid-snippets",
+        "pranaygp.vscode-css-peek",
+        "firefox-devtools.vscode-firefox-debug",
+        "ms-vscode-remote.remote-containers",
+        "aaronccasanova.format-grid-areas",
+        "github.codespaces",
+        "github.vscode-github-actions",
+        "s-nlf-fh.glassit",
+        "sidthesloth.html5-boilerplate",
+        "solnurkarim.html-to-css-autocompletion",
+        "tal7aouy.icons",
+        "zignd.html-css-class-completion",
+        "xabikos.javascriptsnippets",
+        "ritwickdey.liveserver",
+        "equinusocio.vsc-material-theme",
+        "ms-edgedevtools.vscode-edge-devtools",
+        "christian-kohler.npm-intellisense",
+        "hoovercj.vscode-power-mode",
+        "esbenp.prettier-vscode",
+        "svipas.prettier-plus",
+        "slevesque.shader"
+    ]
+}
