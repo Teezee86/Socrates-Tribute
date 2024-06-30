@@ -3,8 +3,7 @@
 box-sizing: border-box;
 }
 html {
-    background-color: #3b3c40;
-    font-size: 18px;
+    font-size: 16px;
     color: whitesmoke;
 }
 html, body, 
@@ -12,7 +11,7 @@ header, article,
 section, aside, 
 nav, footer, 
 main,  ul, 
-li, img {
+li, img, figure {
     margin: 0;
     padding: 0;
     max-width: 100%;
@@ -21,7 +20,9 @@ li, img {
     align-items: center;
     line-height: 1.2;
  }
- 
+ img {
+    overflow: clip;
+ }
  nav, ul, li {
     list-style-type: none;
  }

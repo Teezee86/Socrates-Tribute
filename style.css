@@ -1,5 +1,40 @@
+/* CSS reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    }
+    html, body, 
+    header, article, 
+    section, aside, 
+    nav, footer, 
+    main,  ul, p,
+    li, a, img, figure, svg, blockquote, q, div {
+        display: grid;
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        line-height: 1.2;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    html, body {
+        width: 100%;
+        font-size: 16px;
+    }
+    figure {
+       max-width: 100%;
+    }
+     li {
+        list-style-type: none;
+     }
+     a {
+        text-decoration: none;
+        color: var(--link-color);
+        font-size:  .4rem;
+     }
 /* Colors */
 :root {
+    --black-bg: black;
     --neutral-fcolor: grey;
     --title-fcolor: White;
     --title-shadow: 0, 0, 10px 1px black;
@@ -9,20 +44,33 @@
     --gray-shadow: rgb(50, 50, 50);
     --white-shadow: 0, 0, 15px 5px whitesmoke;
     --ghost-shadow: 0 0 20px 5px ghostwhite;
-    
+    --sect-bg: rgba(18, 23, 32, 0.82); 
+  }
+/* ICONS*/
+svg {
+    width: 50%;
+}
+/* BASE STYLES */
+body, header, nav, thead {
+    background-color: var(--black-bg);
+}
+h1, h2, h3, h4 {
+    font-family: "Ubuntu", Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    color:  var(--title-fcolor);
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: var(--primary-fcolor);
+    text-shadow: var(--gray-shadow);
+    box-shadow: var(--gray-shadow);
+}
+a, q, blockquote, figcaption {
+    font-family: "Playwrite DE Grund", cursive;
+}
+section,  blockquote {
+background-color: var(--sect-bg);
 }
 
- /* font familys */
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Rouge+Script&display=swap');
- 
-.playwrite {
-  font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.rouge-script{
-    font-family: "Rouge Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  /* BASE STYLES */
