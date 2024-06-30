@@ -29,33 +29,4 @@ li, img {
     text-decoration: none;
  }
  /* Reset */
- /* Colors */
- :root {
-    --neutral-fcolor: grey;
-    --title-fcolor: White;
-    --title-shadow: 0, 0, 10px 1px black;
-    --primary-fcolor: rgb(192, 168, 122);
-    --link-color: rgb(189, 255, 255);
-    --link-visited: rgb(123, 82, 123);
-    --gray-shadow: rgb(50, 50, 50);
-    --white-shadow: 0, 0, 15px 5px whitesmoke;
-    --ghost-shadow: 0 0 20px 5px ghostwhite;
-    
-}
-
- /* font familys */
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Rouge+Script&display=swap');
  
-.playwrite {
-  font-family: "Playwrite DE Grund", cursive;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-.rouge-script{
-    font-family: "Rouge Script", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  /* BASE STYLES */
-
-  nav, header, footer {
