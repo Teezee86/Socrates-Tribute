@@ -2,75 +2,76 @@
 <html lang="en">
 
 <head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Rouge+Script&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap');
-    </style>
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+</style>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A page tribute to the Philosopher Socrates">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords"
         content="Socrates, Plato, Athens, Philosophy, philosopher, BC, Hemlock, Sentenced, to , death, Corrupting, youth, Impeity, questions, ancient, greek">
-    <meta name="author" content="Jacob Z.">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
     <title>Socrates Tribute</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!--navbar-->
-    <nav id="navbar">
-        <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link" href="#tribute-info">About</a></li>
-            <li class="nav__item"><a class="nav__link" href="#timeline">Timeline</a></li>
-            <li class="nav__item"><a class="nav__link" href="#furtherlearning">Links</a></li>
-            <li class="nav__item"><a class="nav__link" href="#thedeadofsocrates">The Death</a></li>
-            <li class="nav__item"><a class="nav__link" href="#author section">Authors Section</a></li>
-        </ul>
-    </nav>
-
+        <nav class="nav--fixed bg--black" id="navbar" role="navbar">
+            <ul class="nav__list flex">
+                <li class="nav__item"><a class="nav__link " href="#tribute-info">About</a></li>
+                <li class="nav__item"><a class="nav__link" href="#timeline">Timeline</a></li>
+                <li class="nav__item"><a class="nav__link" href="#furtherlearning">Links</a></li>
+                <li class="nav__item"><a class="nav__link" href="#thedeadofsocrates">The Death</a></li>
+                <li class="nav__item"><a class="nav__link" href="#author section">Authors Section</a></li>
+            </ul>
+        </nav>
+    </div>
+    
     <!--Main of the page-->
-    <main id="main">
-
-        <!-- PAGE HEADER-->
-        <header class="header page-header" id="pg-header">
-            <h1 class="pg__title ttle" id="title">Socrates</h1>
-            <div class="title--underline"></div>
-            <figure>
-                <img class="img header-img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Socrates_statue_at_the_Louvre%2C_8_April_2013.jpg"
-                    alt="statue of socrates head">
+    <main class="pg" id="main">
+        <article class="pg__article">
+            
+            <!-- PAGE HEADER-->
+             <div class="title__container">
+    <header class="pg__hdr hdr" id="header">
+        <h1 class="hdr__title">Socrates</h1>
+            
+            
+            <figure class="hdr__img">
+                <img width="80%"" class="img"
+                            src="https://www.popularbeethoven.com/wp-content/uploads/2023/01/540px-Socrate_du_Louvre-e1674653999545.jpg"
+                             alt="statue of socrates head">
             </figure>
-   
-                <div class="next-arrw header__next-arrw--blur">
-                    <svg xmins="http://www.w3.org/2000/svg" height="100%" viewBox="0 -960 960 960" width="100%"
-                        fill="#1a1a1a">
-                        <path
-                            d="m480-332 146-146-42-42-74 74v-182h-60v182l-74-74-42 42 146 146Zm0 252q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-156t86-127Q252-817 325-848.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 82-31.5 155T763-197.5q-54 54.5-127 86T480-80Zm0-60q142 0 241-99.5T820-480q0-142-99-241t-241-99q-141 0-240.5 99T140-480q0 141 99.5 240.5T480-140Zm0-340Z" />
-                    </svg>
-                </div>
-            </div>
+        </div>
+
         </header>
 
-
-        <!--Opening QUOTE  // Pre Header of article-->
-        <section>
-            <blockquote cite="https://www.goodreads.com/work/quotes/1692879">
-                <p>
-                    <q>
-                        For to fear death, gentlemen, is nothing else than to think one is wise when one is not; for it
-                        is thinking one knows what one does not know. For no one knows whether death be not even the
-                        greatest of all blessings to man, but they fear it as if they knew that it is the greatest of
+<!--Opening QUOTE  // Pre Header of article-->
+        <section class="quote-section">
+            <blockquote class="qte__cntnr" cite="https://www.goodreads.com/work/quotes/1692879">
+              <div class="qte__back-container">
+                
+                <div class="quote">
+                    <p class="qte__txt">
+                            For to fear death, gentlemen, is nothing else than to think one is wise when one is not; for it
+                            is thinking one knows what one does not know. For no one knows whether death be not even the
+                            greatest of all blessings to man, but they fear it as if they knew that it is the greatest of
                         evils.
-                    </q>
+                    </p>
+                </div>
+                <div class="author__cite">
+                <p class="qte__author-citation">
+                    -- Socrates /
+                    <cite>
+                        <a
+                            href="http://faculty.sgc.edu/rkelley/The%20Apology%20of%20Socrates.pdf">Apology,</a>
+                        </cite> Plato --
                 </p>
-                <p>
-                    -Socrates /
-                    <cite><a
-                            href="http://faculty.sgc.edu/rkelley/The%20Apology%20of%20Socrates.pdf">Apology</a></cite>--Plato
-                </p>
+            </div>
+            </div>
             </blockquote>
         </section>
 
@@ -78,41 +79,40 @@
 
 
         <!-- SUBJECT BIO-->
-        <article>
+        <article id="about" class="article-abt">
 
-            <header>
-                <h2>A Life Examined</h2>
-                <figure id="img-div">
-                    <img id="image"
+            <header class="abt-hdr">
+                <h2 class="abt-hdr__title">A Life Examined</h2>
+                <figure class="img-container" id="img-div">
+                    <img class="img" id="image"
                         src="https://frontier-eyes.online/wp-content/uploads/2023/06/1-1-min-1-scaled-e1685676905135.jpg"
                         alt="Socrates thinking statue">
-                    <figcaption id="img-caption">
-                        Socrates Statue with blues sky
-                    </figcaption>
                 </figure>
             </header>
 
-            <section>
-                <header>
-                    <h3>Who was Socrates?</h3>
+            <section id="tribute-info" class="section who">
+                
+                <header class="who__hdr">
+                    <h3 class="hdr-title who__hdr-title">Who was Socrates?</h3>
                 </header>
-
+                <div class="who__p-container">
                 <p>
-                    <span class="pgraph first-letter--fancy">S</span>ocrates was born 469BC in Athens and died in 399
+                    <span class="p__first p__first-letter--fancy">S</span>ocrates was born 469BC in Athens and died in 399
                     BCE. He was an ancient Greek philosopher. His lifestyle, character, and thoughts have had a profound
                     impact on both ancient and modern philosophy.
                 </p>
                 <p>
-                    Since Socrates did not write anything, our understanding of his personality and teachings primarily
-                    comes from the dialogues of Plato, the Memorabilia of Xenophon, and various writings of Aristotle.
+                    Considering Socrates wasn't one to write anything,
+                    most of our understanding of his personality and teachings primarily
+                    comes from the dialogues of Plato, the Memorabilia of Xenophon, and various writings of Aristotle. 
                     Socrates was a brave soldier in the Peloponnesian War and later served in the Athenian assembly.
                 </p>
-
-                <figure>
+            </div>
+                <figure class="img__container">
                     <img class="who__img" alt="painting of socrates"
                         src="https://faqszone.b-cdn.net/wp-content/uploads/2020/06/S%C3%B3crates.jpg">
                 </figure>
-
+              
                 <p>
                     Socrates believed it was his religious duty to encourage his fellow citizens to lead an examined
                     life by engaging them in philosophical conversations. His contribution to these discussions often
@@ -141,20 +141,21 @@
             </section>
 
             <!-- LIFE CHRONOLOGY-->
-            <section>
                 <header>
                     <h3>Socrates Timeline in Chronological Order</h3>
                 </header>
 
                 <div class="table-container">
-                    
                     <table>
-                       
                         <tr>
-                        <thead>
-                            <th><h4>Year</h4></th>
-                            <th><h4>Life Event</h4></th>
-                        </thead>
+                            <thead>
+                                <th>
+                                    <h4>Year</h4>
+                                </th>
+                                <th>
+                                    <h4>Life Event</h4>
+                                </th>
+                            </thead>
                         </tr>
                         <tr>
                             <td>
@@ -219,7 +220,7 @@
             </section>
         </article>
         <!-- THE DEATH SECTION-->
-        <article>
+        <>
             <header>
                 <h2>The Death Of Socrates</h2>
                 <figure>
@@ -337,25 +338,29 @@
             <li><a href="https://artincontext.org/the-death-of-socrates-by-jacques-louis-david/">The Death Of Socrates
                     Painting by Jacques Louis David</a></li>
         </ul>
-
-        <!--FOOTER-->
-        Jacob Z
-        Dayton, Ohio
-        Contact:
-        ortfolio" href="#">Portfolio</a>
-        <a href="mailto:T.Zornes1986@outlook.com">T.Zornes1986@outlook.com</a>
-        Or Social Media
-
-        <a class="social-links" href="https://Teezee86.github.io">Github</a>
-        <a class="social-links" href="https://Teezee86.frontendmentor.io">FontEndMentor</a>
-        <a class="social-links" href="#">Instagram</a>
-        <a class="social-links" href="#">Facebook.com</a>
-        sites to check out
-        <a href="http://freecodecamp.com">freeCodeCamp</a>
-        <a href="http://freecodecamp.com">css Tricks</a>
-        <a href="http://freecodecamp.com">mdn</a>
-        </footer>
     </main>
+        <!--FOOTER-->
+<footer>
+        Jacob Z
+       <br> Dayton, Ohio
+       <br> Contact:  
+       <a  href="#">Portfolio</a>
+       <div class="foot__social-links social-links"></div> 
+       <a href="mailto:T.Zornes1986@outlook.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+        <a href="twitter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a class="social-links" href="https://Teezee86.github.io">Github <i class="fa fa-github" aria-hidden="true"></i></a>
+        <a class="social-links" href="https://Teezee86.frontendmentor.io">FontEndMentor </a>
+        <a class="social-links" href="#">Instagram<i class="fa fa-instagram" aria-hidden="true"></i> </a>
+        <a class="social-links" href="#">
+            <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+        </div>
+        <div class="inspirational-sites">
+        <a href="http://freecodecamp.com">freeCodeCamp<i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+        <a href="http://freecodecamp.com">css Tricks  </a>
+        <a href="http://freecodecamp.com">mdn</a>
+    </div>    
+    
+    </footer>
 
 
 

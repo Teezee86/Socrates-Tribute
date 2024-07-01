@@ -1,76 +1,157 @@
-/* CSS reset */
-*, *::before, *::after {
-    box-sizing: border-box;
-    }
-    html, body, 
-    header, article, 
-    section, aside, 
-    nav, footer, 
-    main,  ul, p,
-    li, a, img, figure, svg, blockquote, q, div {
-        display: grid;
-        max-width: 100%;
-        margin: 0;
-        padding: 0;
-        align-items: center;
-        line-height: 1.2;
-        word-break: break-all;
-        overflow-wrap: break-word;
-    }
-    html, body {
-        width: 100%;
-        font-size: 16px;
-    }
-    figure {
-       max-width: 100%;
-    }
-     li {
-        list-style-type: none;
-     }
-     a {
-        text-decoration: none;
-        color: var(--link-color);
-        font-size:  .4rem;
-     }
+*, *::before, *::after{
+    box-sizing: border-box; 
+}
+*{
+    margin: 0; 
+    padding: 0; 
+}
+ul,  ol{
+    display: block;
+    list-style: none; 
+}
+html:focus-within{
+    scroll-behavior: smooth; 
+}
+a{
+    font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--link-color);
+    text-decoration: none; 
+}
+table{
+    display: block;
+}
+img, picture, svg, video, canvas{
+    max-width: 100%;
+    height: auto; 
+    vertical-align: middle; 
+    font-style: italic; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+body, html{
+    background-color: var(--sect-bg);
+    width: 100%;
+    height: 100%; 
+    scroll-behavior: smooth; 
+    font-size: 18px;
+}
+h1,  {
+    font-size: 2rem;
+}
+/* FONTS */
+.roboto-thin,  h1, footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+.great-vibes-regular, .p__first {
+    font-family: "Great Vibes", cursive;
+    font-weight: 100;
+    font-style: normal;
+  }
+ p, q {
+    font-family:  'Open Sans',  'Helvetica Neue', sans-serif 
+  }
+  
 /* Colors */
 :root {
+    --title-fwhite: rgb(199, 199, 199);
     --black-bg: black;
     --neutral-fcolor: grey;
-    --title-fcolor: White;
-    --title-shadow: 0, 0, 10px 1px black;
+    --title-shadow: 0 10px 30px 10px rgba(0, 0, 0, 0.774);
     --primary-fcolor: rgb(192, 168, 122);
     --link-color: rgb(189, 255, 255);
     --link-visited: rgb(123, 82, 123);
-    --gray-shadow: rgb(50, 50, 50);
-    --white-shadow: 0, 0, 15px 5px whitesmoke;
+    --gray-shadow: 0 0 20px 10px rgb(50, 50, 50);
+    --white-shadow: 0  0 15px 5px whitesmoke;
     --ghost-shadow: 0 0 20px 5px ghostwhite;
     --sect-bg: rgba(18, 23, 32, 0.82); 
   }
-/* ICONS*/
-svg {
-    width: 50%;
-}
+   
 /* BASE STYLES */
-body, header, nav, thead {
-    background-color: var(--black-bg);
+nav{
+    position: fixed;
+    width: 100%;
 }
-h1, h2, h3, h4 {
-    font-family: "Ubuntu", Helvetica, sans-serif;
-    font-weight: 100;
-    letter-spacing: 4px;
-    color:  var(--title-fcolor);
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    font-size: .8rem;
 }
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
+header, nav, footer, .btn
+{
+ background-color: var(--black-bg);
+}
+header, h1, h2, h3, h4, h5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-fwhite);
+    height: 100vh;
+    padding: 1em;
+}
+p{
+    background-color: var(--sect-bg); 
+    padding: 2em;
     color: var(--primary-fcolor);
-    text-shadow: var(--gray-shadow);
-    box-shadow: var(--gray-shadow);
+    text-shadow: 0 0 10px 1px white ; 
+    hyphens: auto;
+    line-height: 1.5;
+    text-justify: auto;
 }
-a, q, blockquote, figcaption {
-    font-family: "Playwrite DE Grund", cursive;
+.p__first {
+    line-height: 0;
+    font-size: 4rem;
+    color: white;
+    font-weight: 400;
 }
-section,  blockquote {
-background-color: var(--sect-bg);
-}
+.who__p-container{
 
+    margin: -12em 2em 0 2em;
+}
+ blockquote{
+    border-radius: 5px;;
+    align-items: center;
+    padding: 2em;
+    margin: 20em auto;
+    box-shadow: var(--gray-shadow);
+    text-align: center;
+    }
+    .quote {
+        width:100%;
+    }
+    .qte__txt{
+        padding: 1em;
+        color: var(--neutral-fcolor);
+        box-shadow: var(--title-shadow);
+    }
+    picture {
+        display: flex;
+    }
+    figcaption{
+        font-size: .5rem;
+        text-align: center;
+    }
+    footer {
+   display: flex;
+   flex-direction: column;
+   color: var(--neutral-fcolor);
+    }
+/* CLASS */
+ .quote-section {
+    padding: 2.5rem;
+ }
+ .author__cite{
+    width: 90%;
+    margin: auto;;
+ }
+ .img__container{
+ }
+ .who__img{
+    width: 100%;
+ }
+/* ICONS */
+.fa-facebook-official{
+    font-size: 1rem;
+}

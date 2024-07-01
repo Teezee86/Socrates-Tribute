@@ -26,6 +26,8 @@
         "hoovercj.vscode-power-mode",
         "esbenp.prettier-vscode",
         "svipas.prettier-plus",
-        "slevesque.shader"
+        "slevesque.shader",
+        "rohit-chouhan.animate-css",
+        "rohit-chouhan.animate-css-snippet"
     ]
 }
