@@ -14,7 +14,7 @@ html:focus-within{
 }
 a{
     font-family: 'Ubuntu', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: var(--link-color);
+    color: rgb(0, 129, 129);
     text-decoration: none; 
 }
 table{
@@ -33,23 +33,26 @@ body, html{
     width: 100%;
     height: 100%; 
     scroll-behavior: smooth; 
-    font-size: 18px;
+    font-size: 22px;
 }
 h1,  {
     font-size: 2rem;
 }
 /* FONTS */
-.roboto-thin,  h1, footer {
+.roboto-thin,  h1, footer, h2, .shadow {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
   }
-.great-vibes-regular, .p__first {
+ h3, h4, h5{
+    font-weight: 400;
+  }
+.great-vibes-regular, .p__first{
     font-family: "Great Vibes", cursive;
     font-weight: 100;
     font-style: normal;
   }
- p, q {
+ p, q, h3, h4, h5 {
     font-family:  'Open Sans',  'Helvetica Neue', sans-serif 
   }
   
@@ -89,9 +92,11 @@ header, h1, h2, h3, h4, h5 {
     align-items: center;
     color: var(--title-fwhite);
     height: 100vh;
+    min-height: 800px;
     padding: 1em;
 }
 p{
+    margin: 0 4em;
     background-color: var(--sect-bg); 
     padding: 2em;
     color: var(--primary-fcolor);
@@ -102,14 +107,20 @@ p{
 }
 .p__first {
     line-height: 0;
-    font-size: 4rem;
+    font-size: 5rem;
     color: white;
     font-weight: 400;
 }
-.who__p-container{
-
-    margin: -12em 2em 0 2em;
+.who__p-container{;
+    margin: -10em auto;
 }
+.who__p-container-two{
+ 
+}
+.who__hdr{
+
+}
+
  blockquote{
     border-radius: 5px;;
     align-items: center;
@@ -121,13 +132,19 @@ p{
     .quote {
         width:100%;
     }
+    .qte__author-citation{;
+        display: inline-block;
+        margin-top: 3em;
+        color: var(--neutral-fcolor);
+    }
     .qte__txt{
         padding: 1em;
         color: var(--neutral-fcolor);
         box-shadow: var(--title-shadow);
     }
     picture {
-        display: flex;
+        padding-bottom: 4em;
+       
     }
     figcaption{
         font-size: .5rem;
@@ -146,12 +163,104 @@ p{
     width: 90%;
     margin: auto;;
  }
+ 
  .img__container{
- }
+   width: 60%;;
+   display: flex;
+   margin: auto;
+}
+.who{
+    margin-bottom: 20em
+}
  .who__img{
     width: 100%;
+    border-radius: 5px;
+}
+.who__img-2{
+    border-radius: 60%;
+    width: 100%;
+}
+ .who__p-2r{
+    word-wrap: wrap;
+    display: flex;
  }
-/* ICONS */
+ .timeline__hdr{
+    flex-direction: column;
+ }
+.timeline h4{
+    padding: 0;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    margin: 2rem;
+    background-color: var(--neutral-fcolor);
+    width: 75%;
+}
+.card p {
+    border-left: solid 5px;
+}
+.card__description--shadow{
+    color:rgb(151, 128, 53);
+    text-shadow: 0 0px 3px white,
+                            0 0px 5px black
+}
+.shadow{;
+    box-shadow: 0 0 1px 6px #373b3c;
+}
+.grid-container{
+    padding: 1em;
+    background-color:  #515058;
+}
+.death__img {
+    float: right;
+    max-width: 80%;
+}
+.gallery{
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: baseline;
+    display: flex;
+    margin: 5em auto;
+} 
+figcaption{ display: flex;
+    justify-content: center;;
+flex-direction: column;
+    text-align: baseline;
+    color: var(--primary-fcolor)
+}
+cite{
+    color:rgb(1, 135, 135)
+}
+.death__image { 
+    padding: 2em;
+    height: auto;
+    justify-self: 
+    align-self: baseline;
+    margin: auto;
+}
+.expand:hover {
+    min-width:100vw ;
+    border:  5px black;
+}
+aside {
+    padding: 1em;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: baseline;
+}
+aside a{
+font-size: 16px;
+}
+footer{
+
+    font-size: 15px;
+}
+/* ICONS */ 
 .fa-facebook-official{
     font-size: 1rem;
 }
