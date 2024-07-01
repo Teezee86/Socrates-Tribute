@@ -220,7 +220,7 @@ p{
 }
 .gallery{
     flex-direction: row;
-    justify-content: baseline;
+    justify-content: center;
     align-items: baseline;
     display: flex;
     margin: 5em auto;
@@ -236,9 +236,8 @@ cite{
 }
 .death__image { 
     padding: 2em;
-    height: auto;
-    justify-self: 
-    align-self: baseline;
+    height: auto;;
+    display: block;
     margin: auto;
 }
 .expand:hover {
@@ -247,11 +246,10 @@ cite{
 }
 aside {
     padding: 1em;
-display: flex;
-flex-direction: row;
 flex-wrap: wrap;
-justify-content: space-around;
+justify-content: space-evenly;
 align-items: baseline;
+text-align: center;
 }
 aside a{
 font-size: 16px;
@@ -263,4 +261,16 @@ footer{
 /* ICONS */ 
 .fa-facebook-official{
     font-size: 1rem;
+}
+@media screen and (max-width: 550px) {
+    p{
+        margin: 1.1em;
+    }
+}
+@media screen and (max-width: 700px) {
+    
+    .gallery {
+        flex-direction: column;
+    }
+    
 }
