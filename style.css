@@ -95,6 +95,9 @@ header, h1, h2, h3, h4, h5 {
     min-height: 800px;
     padding: 1em;
 }
+.img{
+    float: right;
+}
 p{
     margin: 0 4em;
     background-color: var(--sect-bg); 
@@ -268,9 +271,34 @@ footer{
     }
 }
 @media screen and (max-width: 700px) {
-    
     .gallery {
         flex-direction: column;
     }
-    
+}
+@media screen and (min-width: 725px){
+    .qte__txt{
+        margin: 4em;
+    }
+.qte__cntnr{
+    padding: 0.5em;
+}
+} 
+@media screen and (max-width: 400px) {
+    body, html {
+        font-size: 15px;
+    }   
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+    .quote-section{
+        margin: 1em;
+        padding: 1em;
+    }
+    blockquote p{
+        margin: 0;
+        padding: 0;
+    }
+    .qte__txt{
+        padding: 0;
+        margin: 0;
+    }   
 }
