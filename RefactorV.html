@@ -2,64 +2,65 @@
 <html lang="en">
 
 <head>
-    <!--add this to the style sheet????-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-    </style>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="refract.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="A page tribute to the Philosopher Socrates">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords"
-        content="Socrates, Plato, Athens, Philosophy, philosopher, BC, Hemlock, Sentenced, to , death, Corrupting, youth, Impeity, questions, ancient, greek">
+    <meta name="keywords" content="Socrates, Plato, Athens, Philosophy, philosopher, BC, Hemlock, Sentenced, to , death, Corrupting, youth, Impeity, questions, ancient, greek">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="restyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
     <title>Socrates Tribute</title>
 </head>
 
 <body>
-
-    <nav>
-        <ul>
+<nav class="nvbr nvbr--fxd">
+    <a href="#home">Home</a>
+    <a href="#footer">Contact</a>
+    <section class="menu">
+        <button class="menu__btn">Menu
+        
+            <ul class="menu__links">
             <li><a href="#tribute-info">About</a></li>
             <li><a href="#furtherlearning">Links</a></li>
             <li><a href="#death-of-socrates">Death</a></li>
             <li><a href="#footer">Authors Section</a></li>
         </ul>
+</button>
     </nav>
-    <main " id=" main">
-        <article>
+
+        
+
+        <main id=" main">
 
             <!-- PAGE HEADER-->
             <header id="header">
-                <h1>Socrates</h1>
                 <figure>
-                    <img src="https://www.popularbeethoven.com/wp-content/uploads/2023/01/540px-Socrate_du_Louvre-e1674653999545.jpg"
-                        alt="statue of socrates head">
+                    <img class="hdr__img" src="https://www.popularbeethoven.com/wp-content/uploads/2023/01/540px-Socrate_du_Louvre-e1674653999545.jpg"
+                    alt="statue of socrates head">
                 </figure>
-                </div>
+                <h1>Socrates</h1>
             </header>
-
-            <!--Opening QUOTE  // Pre Header of article-->
-            <section>
-                <blockquote cite="https://www.goodreads.com/work/quotes/1692879">
-                    <p>
-                        "For to fear death, gentlemen, is nothing else than to think one is wise when one is not;
-                        for it is thinking one knows what one does not know. For no one knows whether death be not even
-                        the greatest of all blessings to man, but they fear it as if they knew that it is the
-                        greatest of
-                        evils."
-                    </p>
-                    </div>
-                    <span>
-                        -- Socrates /
+        <section>
+                <img alt="school of atens" class="athens-hero-bg" src="https://s3.amazonaws.com/s3.timetoast.com/public/uploads/photo/17311576/image/7aa3f40a01b375f399e511d39225bec6">                   <blockquote cite="https://www.goodreads.com/work/quotes/1692879">
+                        <p><q>For to fear death, gentlemen, is nothing else than to think one is wise when one is not;
+                            for it is thinking one knows what one does not know. For no one knows whether death be not even
+                            the greatest of all blessings to man, but they fear it as if they knew that it is the
+                            greatest of
+                            evils.</q></p>
+                    
                         <cite>
-                            <a href="http://faculty.sgc.edu/rkelley/The%20Apology%20of%20Socrates.pdf">Apology,</a>
+                            -- Socrates /
+                                <a href="http://faculty.sgc.edu/rkelley/The%20Apology%20of%20Socrates.pdf">Apology,</a>
+                                Plato --
                         </cite>
-                        Plato --</span>
-                </blockquote>
-            </section>
-
+                    </blockquote>
+                </section>
+        
+            
             <!-- SUBJECT BIO-->
             <article id="about">
 
@@ -282,7 +283,6 @@
 						possible
 						with key points and Visual stimulation at the fore front for an all around pleasant experience-->
 
-
     <!--LINKS REFERENCES-->
     <aside id="furtherlearning">
         <h6>Links</h6>
@@ -317,5 +317,4 @@
         <a href="http://frontendmentor.io">Front End Mentor</a>
     </footer>
 </body>
-
 </html>

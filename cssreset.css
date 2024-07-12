@@ -14,11 +14,6 @@ main,  ul,
 li, img, figure {
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    max-width: 100%;
-    display: grid;
-    align-items: center;
-    line-height: 1.2;
  }
  img {
     overflow: clip;
